@@ -92,14 +92,7 @@ const closeDialog = () => {
   }
 }
 
-watchEffect(() => {
-  if (props.show) {
-    showDialog()
-  } else {
-    dialogRef.value?.close()
-    resetForm()
-  }
-})
+watchEffect(() => props.show ? showDialog() : closeDialog())
 
 const handleSave = () => {
   emit('save', currentQuota.value, selectedReason.value)
