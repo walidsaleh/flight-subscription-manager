@@ -2,6 +2,10 @@
 
 A Vue.js component for managing flight quotas in a subscription-based system.
 
+## Demo
+
+You can check out a live demo of Flight Subscription Manager here: https://flight-subscription-manager.netlify.app/
+
 ## Features
 
 - Edit the number of flights left in a subscription
