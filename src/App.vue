@@ -40,7 +40,7 @@ const updateQuota = async (newQuota, reason) => {
       throw new Error('Failed to update quota')
     }
   } catch (error) {
-    displaySystemMessage('Error updating quota')
+    displaySystemMessage(error.message || 'Error updating quota')
   } finally {
     isLoading.value = false
   }

@@ -39,7 +39,7 @@ describe('App', () => {
 
     await wrapper.vm.updateQuota(2, 'Test reason')
 
-    expect(wrapper.vm.systemMessage).toBe('Error updating quota')
+    expect(wrapper.vm.systemMessage).toBe('Failed to update quota')
   })
 
   it('handles network error during quota update', async () => {
@@ -47,7 +47,7 @@ describe('App', () => {
 
     await wrapper.vm.updateQuota(2, 'Test reason')
 
-    expect(wrapper.vm.systemMessage).toBe('Error updating quota')
+    expect(wrapper.vm.systemMessage).toBe('Network error')
   })
 
   it('validates quota limits', async () => {
