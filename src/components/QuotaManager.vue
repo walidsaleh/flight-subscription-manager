@@ -127,7 +127,7 @@ const handleSave = () => {
         <label v-if="!currentQuotaIsTheSame" for="reason">
           Reason to {{ isIncreasingQuota ? 'add' : 'reduce' }}
           <select id="reason" v-model="selectedReason" required>
-            <option value="">What is the motive</option>
+            <option value="">-What is the motive-</option>
             <option v-for="reason in availableReasons" :key="reason" :value="reason">
               {{ reason }}
             </option>
