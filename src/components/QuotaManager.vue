@@ -15,6 +15,7 @@ const props = defineProps({
   quota: {
     type: Number,
     required: true,
+    validator: (value) => value >= 0,
   },
   show: {
     type: Boolean,
